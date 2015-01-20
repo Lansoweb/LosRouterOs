@@ -45,6 +45,7 @@ class Active
     public function setRouterId($routerId)
     {
         $this->routerId = $routerId;
+
         return $this;
     }
 
@@ -56,6 +57,7 @@ class Active
     public function setServer($server)
     {
         $this->server = $server;
+
         return $this;
     }
 
@@ -67,6 +69,7 @@ class Active
     public function setUser($user)
     {
         $this->user = $user;
+
         return $this;
     }
 
@@ -78,6 +81,7 @@ class Active
     public function setAddress($address)
     {
         $this->address = $address;
+
         return $this;
     }
 
@@ -89,6 +93,7 @@ class Active
     public function setMacAddress($macAddress)
     {
         $this->macAddress = $macAddress;
+
         return $this;
     }
 
@@ -100,6 +105,7 @@ class Active
     public function setLoginBy($loginBy)
     {
         $this->loginBy = $loginBy;
+
         return $this;
     }
 
@@ -111,6 +117,7 @@ class Active
     public function setUptime($uptime)
     {
         $this->uptime = $uptime;
+
         return $this;
     }
 
@@ -122,6 +129,7 @@ class Active
     public function setKeepaliveTimeout($keepaliveTimeout)
     {
         $this->keepaliveTimeout = $keepaliveTimeout;
+
         return $this;
     }
 
@@ -133,6 +141,7 @@ class Active
     public function setRadius($radius)
     {
         $this->radius = $radius;
+
         return $this;
     }
 }

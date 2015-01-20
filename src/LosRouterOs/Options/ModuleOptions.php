@@ -21,7 +21,8 @@ class ModuleOptions extends AbstractOptions
 
     public function setHost($host)
     {
-        $this->host = (string)$host;
+        $this->host = (string) $host;
+
         return $this;
     }
 
@@ -32,7 +33,8 @@ class ModuleOptions extends AbstractOptions
 
     public function setPort($port)
     {
-        $this->port = (int)$port;
+        $this->port = (int) $port;
+
         return $this;
     }
 
@@ -43,7 +45,8 @@ class ModuleOptions extends AbstractOptions
 
     public function setUsername($username)
     {
-        $this->username = (string)$username;
+        $this->username = (string) $username;
+
         return $this;
     }
 
@@ -54,7 +57,8 @@ class ModuleOptions extends AbstractOptions
 
     public function setPassword($password)
     {
-        $this->password = (string)$password;
+        $this->password = (string) $password;
+
         return $this;
     }
 }

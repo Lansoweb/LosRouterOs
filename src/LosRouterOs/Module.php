@@ -1,7 +1,6 @@
 <?php
 namespace LosRouterOs;
 
-use PEAR2\Net\RouterOS\Client;
 class Module
 {
 
