@@ -1,5 +1,5 @@
 <?php
-return array(
+return [
     'service_manager' => [
         'factories' => [
             'LosRouterOs\Options\ModuleOptions' => 'LosRouterOs\Options\ModuleOptionsFactory',
@@ -10,61 +10,61 @@ return array(
             'losrouteros.client' => 'LosRouterOs\Entity\Client'
         ]
     ],
-    'controllers' => array(
-        'invokables' => array(
+    'controllers' => [
+        'invokables' => [
             'LosRouterOs\Controller\Index' => 'LosRouterOs\Controller\IndexController'
-        )
-    ),
+        ]
+    ],
     'console' => [
-        'router' => array(
-            'routes' => array(
-                'losrouteros-getactives' => array(
-                    'options' => array(
+        'router' => [
+            'routes' => [
+                'losrouteros-getactives' => [
+                    'options' => [
                         'route' => 'get actives',
-                        'defaults' => array(
+                        'defaults' => [
                             '__NAMESPACE__' => 'LosRouterOs\Controller',
                             'controller' => 'Index',
                             'action' => 'get-actives'
-                        )
-                    )
-                )
-            )
-        )
+                        ]
+                    ]
+                ]
+            ]
+        ]
     ],
-    'router' => array(
-        'routes' => array(
-            'los-router-os' => array(
+    'router' => [
+        'routes' => [
+            'los-router-os' => [
                 'type' => 'Literal',
-                'options' => array(
+                'options' => [
                     'route' => '/losrouteros',
-                    'defaults' => array(
+                    'defaults' => [
                         '__NAMESPACE__' => 'LosRouterOs\Controller',
                         'controller' => 'Index',
                         'action' => 'index'
-                    )
-                ),
+                    ]
+                ],
                 'may_terminate' => true,
-                'child_routes' => array(
-                    'default' => array(
+                'child_routes' => [
+                    'default' => [
                         'type' => 'Literal',
-                        'options' => array(
+                        'options' => [
                             'route' => '/actives',
-                            'defaults' => array(
+                            'defaults' => [
                                 '__NAMESPACE__' => 'LosRouterOs\Controller',
                                 'controller' => 'Index',
                                 'action' => 'get-actives'
-                            )
-                        )
-                    )
-                )
-            )
-        )
-    ),
-    'view_manager' => array(
-        'template_path_stack' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'view_manager' => [
+        'template_path_stack' => [
             'LosRouterOs' => __DIR__ . '/../view'
-        )
-    ),
+        ]
+    ],
     'routeros' => [
     ]
-);
+];
