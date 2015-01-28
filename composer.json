@@ -1,26 +1,28 @@
 {
-  "name" : "los/losrouteros",
-  "description" : "LosRouterOs provides RouterOS (Mikrotik) funcionality to ZF2",
-  "require" : {
-    "php" : ">=5.4.0",
-    "zendframework/zendframework" : "2.3.*",
-    "pear2/net_routeros" : "=1.0.0b5",
-    "pear2/net_transmitter" : "=1.0.0a5"
-  },
-  "authors" : [ {
-    "name" : "Leandro Silva",
-    "email" : "leandro@leandrosilva.info",
-    "homepage" : "https://leandrosilva.info"
-  } ],
-  "keywords" : [ "los", "routeros", "mikrotik", "module", "zf2" ],
-  "minimum-stability" : "beta",
-  "autoload" : {
-    "psr-0" : {
-      "LosRouteOs\\" : "src/"
+    "name" : "los/losrouteros",
+    "description" : "LosRouterOs provides RouterOS (Mikrotik) funcionality to ZF2",
+    "require" : {
+        "php" : ">=5.4.0",
+        "zendframework/zendframework" : "2.3.*",
+        "pear2/net_routeros" : "=1.0.0b5",
+        "pear2/net_transmitter" : "=1.0.0a5"
     },
-    "classmap" : [ "./" ]
-  },
-  "type" : "library",
-  "license" : "MIT",
-  "homepage" : "http://github.com/Lansoweb/LosRouterOs"
+    "authors" : [ 
+        {
+            "name" : "Leandro Silva",
+            "email" : "leandro@leandrosilva.info",
+            "homepage" : "http://leandrosilva.info"
+        } 
+    ],
+    "keywords" : [ "los", "routeros", "mikrotik", "module", "zf2" ],
+    "minimum-stability" : "beta",
+    "autoload" : {
+        "psr-0" : {
+            "LosRouteOs\\" : "src/"
+        },
+        "classmap" : [ "./" ]
+    },
+    "type" : "library",
+    "license" : "MIT",
+    "homepage" : "http://github.com/Lansoweb/LosRouterOs"
 }
