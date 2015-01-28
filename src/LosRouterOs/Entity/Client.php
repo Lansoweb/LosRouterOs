@@ -4,6 +4,7 @@ namespace LosRouterOs\Entity;
 use PEAR2\Net\RouterOS\Client as RouterClient;
 use PEAR2\Net\RouterOS\Request;
 use PEAR2\Net\RouterOS\Response;
+use PEAR2\Net\RouterOS\SocketException;
 
 class Client
 {
@@ -12,7 +13,11 @@ class Client
 
     public function __construct($host, $username, $password = null, $port = 8727)
     {
-        $this->routerClient = new RouterClient($host, $username, $password, $port);
+        try {
+            $this->routerClient = new RouterClient($host, $username, $password, $port);
+        } catch (SocketException $ex) {
+            throw new \RuntimeException("Error connecting to RouterOS. Check the configuration and network.", $ex->getCode(), $ex);
+        }
     }
 
     public function getRouterClient()
