@@ -4,7 +4,7 @@ namespace LosRouterOs\Entity;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class ClientFactory implements FactoryInterface
+final class ClientFactory implements FactoryInterface
 {
 
     public function createService(ServiceLocatorInterface $sl)

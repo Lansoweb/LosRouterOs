@@ -3,7 +3,7 @@ namespace LosRouterOs\Entity;
 
 use PEAR2\Net\RouterOS\Response;
 
-class Active
+final class Active
 {
 
     private $routerId;

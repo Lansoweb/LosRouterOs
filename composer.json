@@ -7,6 +7,11 @@
         "pear2/net_routeros" : "=1.0.0b5",
         "pear2/net_transmitter" : "=1.0.0a5"
     },
+    "suggest": {
+        "los/losbase": "los/losbase for some abstract classes to speed development ",
+        "los/loslog": "los/loslog for logging",
+        "los/losui": "los/losui for twitter bootstrap 3 styling, jquery, chosen and other libraries"
+    },    
     "authors" : [ 
         {
             "name" : "Leandro Silva",

@@ -4,13 +4,13 @@ namespace LosRouterOs\Options;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class ModuleOptionsFactory implements FactoryInterface
+final class ModuleOptionsFactory implements FactoryInterface
 {
 
     public function createService(ServiceLocatorInterface $sl)
     {
         $config = $sl->get('Configuration');
 
-        return new ModuleOptions(isset($config['losrouteros']) ? $config['losrouteros'] : []);
+        return new ModuleOptions(\array_key_exists('losrouteros', $config) ? $config['losrouteros'] : []);
     }
 }

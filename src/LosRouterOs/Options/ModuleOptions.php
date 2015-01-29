@@ -3,7 +3,7 @@ namespace LosRouterOs\Options;
 
 use Zend\Stdlib\AbstractOptions;
 
-class ModuleOptions extends AbstractOptions
+final class ModuleOptions extends AbstractOptions
 {
 
     private $host;

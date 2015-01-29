@@ -6,7 +6,7 @@ use PEAR2\Net\RouterOS\Request;
 use PEAR2\Net\RouterOS\Response;
 use PEAR2\Net\RouterOS\SocketException;
 
-class Client
+final class Client
 {
 
     private $routerClient;

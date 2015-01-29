@@ -3,6 +3,6 @@ namespace LosRouterOs\Service;
 
 use LosBase\Service\AbstractEntity as EntityBase;
 
-class Router extends EntityBase
+final class Router extends EntityBase
 {
 }
