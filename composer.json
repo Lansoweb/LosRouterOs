@@ -28,6 +28,6 @@
         "classmap" : [ "./" ]
     },
     "type" : "library",
-    "license" : "MIT",
+    "license" : "BSD-3-Clause",
     "homepage" : "http://github.com/Lansoweb/LosRouterOs"
 }
