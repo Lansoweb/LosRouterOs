@@ -1,33 +1,31 @@
 {
-    "name" : "los/losrouteros",
-    "description" : "LosRouterOs provides RouterOS (Mikrotik) funcionality to ZF2",
-    "require" : {
-        "php" : ">=5.4.0",
-        "zendframework/zendframework" : "2.3.*",
-        "pear2/net_routeros" : "=1.0.0b5",
-        "pear2/net_transmitter" : "=1.0.0a5"
+  "name" : "los/losrouteros",
+  "description" : "LosRouterOs provides RouterOS (Mikrotik) funcionality to ZF2",
+  "require" : {
+    "php" : ">=5.4.0",
+    "zendframework/zendframework" : "2.3.*",
+    "pear2/net_routeros" : "~1.0",
+    "pear2/net_transmitter" : "~1.0"
+  },
+  "authors" : [ {
+    "name" : "Leandro Silva",
+    "email" : "leandro@leandrosilva.info",
+    "homepage" : "http://leandrosilva.info"
+  } ],
+  "keywords" : [ "los", "routeros", "mikrotik", "module", "zf2" ],
+  "minimum-stability" : "beta",
+  "autoload" : {
+    "psr-0" : {
+      "LosRouteOs\\" : "src/"
     },
-    "suggest": {
-        "los/losbase": "los/losbase for some abstract classes to speed development ",
-        "los/loslog": "los/loslog for logging",
-        "los/losui": "los/losui for twitter bootstrap 3 styling, jquery, chosen and other libraries"
-    },    
-    "authors" : [ 
-        {
-            "name" : "Leandro Silva",
-            "email" : "leandro@leandrosilva.info",
-            "homepage" : "http://leandrosilva.info"
-        } 
-    ],
-    "keywords" : [ "los", "routeros", "mikrotik", "module", "zf2" ],
-    "minimum-stability" : "beta",
-    "autoload" : {
-        "psr-0" : {
-            "LosRouteOs\\" : "src/"
-        },
-        "classmap" : [ "./" ]
-    },
-    "type" : "library",
-    "license" : "BSD-3-Clause",
-    "homepage" : "http://github.com/Lansoweb/LosRouterOs"
+    "classmap" : [ "./" ]
+  },
+  "suggest" : {
+    "los/losbase" : "los/losbase for some abstract classes to speed development ",
+    "los/loslog" : "los/loslog for logging",
+    "los/losui" : "los/losui for twitter bootstrap 3 styling, jquery, chosen and other libraries"
+  },
+  "license" : "BSD-3-Clause",
+  "type" : "library",
+  "homepage" : "http://github.com/Lansoweb/LosRouterOs"
 }
