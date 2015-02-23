@@ -1,1 +1,4 @@
-Sample, skeleton module for use with the ZF2 MVC layer.
+# LosRouterOs
+[![Latest Stable Version](https://poser.pugx.org/los/losrouteros/v/stable.svg)](https://packagist.org/packages/los/losrouteros) [![Total Downloads](https://poser.pugx.org/los/losrouteros/downloads.svg)](https://packagist.org/packages/los/losrouteros) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Lansoweb/LosRouterOs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Lansoweb/LosRouterOs/?branch=master) [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/5bc3718f-eb4c-4080-aeda-56ba9f471efa.svg?style=flat)](https://insight.sensiolabs.com/projects/5bc3718f-eb4c-4080-aeda-56ba9f471efa) [![Dependency Status](https://www.versioneye.com/user/projects/54e8472ad1ec577c97000b65/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e8472ad1ec577c97000b65)
+
+Coming Soon!
