@@ -3,7 +3,7 @@
   "description" : "LosRouterOs provides RouterOS (Mikrotik) funcionality to ZF2",
   "require" : {
     "php" : ">=5.4.0",
-    "zendframework/zendframework" : "2.3.*",
+    "zendframework/zendframework" : ">=2.3.2,<3.0.0",
     "pear2/net_routeros" : "^1.0.0b5",
     "pear2/net_transmitter" : "^1.0.0a5"
   },

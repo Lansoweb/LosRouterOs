@@ -40,4 +40,20 @@ final class Client
 
         return $actives;
     }
+
+    public function getScripts()
+    {
+        $request = new Request('/system script print');
+        $ret = $this->routerClient->sendSync($request);
+
+        $actives=[];
+        /* @var $response \PEAR2\Net\RouterOS\Response */
+        foreach ($ret as $response) {
+            if ($response->getType() == Response::TYPE_DATA) {
+                $actives[] = new Active($response);
+            }
+        }
+
+        return $actives;
+    }
 }
