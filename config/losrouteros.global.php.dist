@@ -1,24 +1,11 @@
 <?php
 return [
-    'losrouteros' => [
-        /**
-         * Router hostname or IP
-         */
-        //'host' => '',
-
-        /**
-         * Router port
-         */
-        //'port' => '8728',
-
-        /**
-         * Username
-         */
-        //'username' => '',
-
-        /**
-         * Password
-         */
-        //'password' => ''
-    ]
+    'los' => [
+        'router-os' => [
+            'host' => '',
+            'port' => 8728,
+            'username' => '',
+            'password' => ''
+        ],
+    ],
 ];
