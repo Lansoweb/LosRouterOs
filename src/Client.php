@@ -23,10 +23,18 @@ class Client
      * @param string $username
      * @param string $password
      * @param int $port
+     * @param int $timeout
      */
-    public function __construct(string $host, string $username, string $password, int $port = 8727)
+    public function __construct(string $host, string $username, string $password, int $port = 8727, int $timeout = 60)
     {
-        $this->routerClient = new RouterClient($host, $username, $password, $port);
+        $this->routerClient = new RouterClient(
+            $host,
+            $username,
+            $password,
+            $port,
+            false,
+            $timeout
+        );
     }
 
     /**
