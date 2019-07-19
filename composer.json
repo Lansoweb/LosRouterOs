@@ -3,9 +3,9 @@
   "description" : "LosRouterOs provides RouterOS (Mikrotik) functionality",
   "require" : {
     "php" : "^7.1",
-    "pear2/net_routeros" : "^1.0.0b5",
-    "pear2/net_transmitter" : "^1.0.0b2",
-    "psr/container": "^1.0"
+    "psr/container": "^1.0",
+    "pear2/net_transmitter": "1.0.0b2",
+    "zooxsmart/net_routeros": "1.0.0b7"
   },
   "authors" : [ {
     "name" : "Leandro Silva",
