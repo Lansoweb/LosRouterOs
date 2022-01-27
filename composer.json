@@ -2,7 +2,7 @@
   "name" : "los/losrouteros",
   "description" : "LosRouterOs provides RouterOS (Mikrotik) functionality",
   "require" : {
-    "php" : "^7.1",
+    "php": "~7.4.0||~8.0.0||~8.1.0",
     "psr/container": "^1.0",
     "pear2/net_transmitter": "1.0.0b2",
     "zooxsmart/net_routeros": "1.0.0b7"
@@ -36,8 +36,12 @@
     "phpstan": "phpstan analyse -l max src"
   },
   "require-dev": {
-    "zendframework/zend-coding-standard": "^1.0",
-    "squizlabs/php_codesniffer": "^2.7",
-    "phpstan/phpstan": "^0.9.2"
+    "laminas/laminas-coding-standard": "^2.3",
+    "phpstan/phpstan": "^0.12.58"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }

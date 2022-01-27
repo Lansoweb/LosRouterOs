@@ -8,8 +8,7 @@ use Psr\Container\ContainerInterface;
 
 class ClientFactory
 {
-
-    public function __invoke(ContainerInterface $container)
+    public function __invoke(ContainerInterface $container): Client
     {
         $options = $container->get('config')['los']['router-os'] ?? [];
 
