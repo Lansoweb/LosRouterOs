@@ -9,6 +9,8 @@ use PEAR2\Net\RouterOS\Request;
 use PEAR2\Net\RouterOS\Response;
 use PEAR2\Net\RouterOS\ResponseCollection;
 
+use function assert;
+
 class Client
 {
     /** @var RouterClient */
@@ -17,14 +19,6 @@ class Client
     /** @var ResponseCollection */
     private $lastResponse;
 
-    /**
-     * Client constructor.
-     * @param string $host
-     * @param string $username
-     * @param string $password
-     * @param int $port
-     * @param int $timeout
-     */
     public function __construct(string $host, string $username, string $password, int $port = 8727, int $timeout = 60)
     {
         $this->routerClient = new RouterClient(
@@ -46,31 +40,33 @@ class Client
     }
 
     /**
-     * @return array
+     * @return array<int,mixed>
      */
     public function getActives()
     {
         return $this->execute('/ip hotspot active print');
     }
 
+    /**
+     * @return array<int,mixed>
+     */
     public function getScripts()
     {
         return $this->execute('/system script print');
     }
 
     /**
-     * @param string $command
-     * @return array
+     * @return array<int,mixed>
      */
     public function execute(string $command)
     {
-        $request = new Request($command);
+        $request            = new Request($command);
         $this->lastResponse = $this->routerClient->sendSync($request);
 
         $list = [];
-        /** @var Response $response */
         foreach ($this->lastResponse as $response) {
-            if ($response->getType() == Response::TYPE_DATA) {
+            assert($response instanceof Response);
+            if ($response->getType() === Response::TYPE_DATA) {
                 $list[] = $response->getIterator();
             }
         }
@@ -78,9 +74,6 @@ class Client
         return $list;
     }
 
-    /**
-     * @return ResponseCollection
-     */
     public function lastResponse(): ResponseCollection
     {
         return $this->lastResponse;
